@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import Sign from '@/components/ui/SignUp'
+import Sign from '@/SignUp'
 import Onboarding from '@/app/onboarding/page'
 import { getServerSession } from "next-auth"
 import { redirect } from "next/navigation"
