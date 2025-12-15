@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import Sign from '@/pages/api/auth/SignUp'
+import Sign from '@/signin/SignUp'
 import Onboarding from '@/app/onboarding/page'
 import { getServerSession } from "next-auth"
 import { redirect } from "next/navigation"
