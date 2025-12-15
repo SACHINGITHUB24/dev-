@@ -1,5 +1,9 @@
+
 import NextAuth from "next-auth"
 import GithubProvider from "next-auth/providers/github"
+// import User from '@/models/userdata'
+// import { signIn } from "next-auth/react"
+// import { dbConnect } from "@/db"
 
 export const authOptions = {
   // Configure one or more authentication providers
@@ -27,8 +31,27 @@ export const authOptions = {
     session.accessToken = token.accessToken
     return session
   }
-}
+
+  // async signIn({user, account, profile}){
+  //   await dbConnect()
+
+  //   const existinguser = await User.findOne({email: user.email})
+
+  //   if(!existinguser){
+  //     await User.create({
+  //       githubId: profile.id,
+  //       name: user.name,
+  //       username: profile.login,
+  //       avatar: user.image,
+  //     })
+  //   }
+
+  //   return true
+  // }
+  }
 
 }
 
 export default NextAuth(authOptions)
+
+

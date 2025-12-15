@@ -4,14 +4,17 @@
 import React, { useTransition } from "react"
 import { LuGithub } from "react-icons/lu"
 import { signIn } from "next-auth/react"
+import { authOptions } from "@/pages/api/auth/[...nextauth]"
+import { getServerSession } from "next-auth"
 
-const SignUp = () => {
+const SignUp =  () => {
   const [isPending, startTransition] = useTransition()
+  const session =  getServerSession(authOptions)
 
   const handleGithubSignIn = () => {
     startTransition(() => {
       signIn("github", {
-        callbackUrl: "/onboarding", // change later if needed
+        callbackUrl: `/onboarding`, // change later if needed
       })
     })
   }
