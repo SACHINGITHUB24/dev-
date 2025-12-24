@@ -12,7 +12,7 @@ export default async function Home() {
 
 
 
-   
+   <div>
 
     if(session){
       redirect("/onboarding") //or /dashboard user
@@ -21,7 +21,7 @@ export default async function Home() {
       return (
     <Sign />
 
-
+         </div>
   );
 }
 
