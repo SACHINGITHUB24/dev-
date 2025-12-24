@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import Sign from '@/signin/SignUp'
+import Sign from '@/components/ui/SignUp'
 import Onboarding from '@/app/onboarding/page'
 import { getServerSession } from "next-auth"
 import { redirect } from "next/navigation"
@@ -12,7 +12,7 @@ export default async function Home() {
 
 
 
-   <div>
+   
 
     if(session){
       redirect("/onboarding") //or /dashboard user
@@ -21,7 +21,7 @@ export default async function Home() {
       return (
     <Sign />
 
-         </div>
+
   );
 }
 

@@ -1,5 +1,5 @@
 
-"use client"
+// "use client"
 
 import React, { useTransition } from "react"
 import { LuGithub } from "react-icons/lu"
