@@ -1,5 +1,5 @@
 
-// "use client"
+"use client"  
 
 import React, { useTransition } from "react"
 import { LuGithub } from "react-icons/lu"
@@ -34,7 +34,7 @@ const SignUp =  () => {
         <button
           onClick={handleGithubSignIn}
           disabled={isPending}
-          className="w-full sm:w-auto mx-auto flex items-center justify-center gap-2 rounded bg-black px-4 py-2 text-white transition-opacity disabled:opacity-70"
+          className="w-full sm:w-auto mx-auto flex items-center justify-center gap-2 rounded bg-black px-4 py-2 text-white transition-opacity disabled:opacity-70 cursor-pointer"
         >
           <LuGithub />
           {isPending ? "Connecting GitHub..." : "Continue with GitHub"}

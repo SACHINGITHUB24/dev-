@@ -2,7 +2,7 @@
 import NextAuth from "next-auth"
 import GithubProvider from "next-auth/providers/github"
 // import User from '@/models/userdata'
-// import { signIn } from "next-auth/react"
+import { signIn } from "next-auth/react"
 // import { dbConnect } from "@/db"
 
 export const authOptions = {
